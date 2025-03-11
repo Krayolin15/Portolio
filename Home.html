@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Krayolin Kisten</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
@@ -17,9 +19,7 @@
             color: white;
         }
 
-        *,
-        *::before,
-        *::after {
+        *, *::before, *::after {
             box-sizing: inherit;
         }
 
@@ -52,8 +52,7 @@
             transition: .3s;
         }
 
-        .navbar a:hover,
-        .navbar a.active {
+        .navbar a:hover, .navbar a.active {
             color: #00BFFF;
         }
 
@@ -248,7 +247,6 @@
             0% {
                 transform: translate(-50%, -50%) rotate(0deg);
             }
-
             100% {
                 transform: translate(-50%, -50%) rotate(360deg);
             }
@@ -278,36 +276,27 @@
         }
 
         .education {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    min-height: auto; /* Consider removing this if it has no effect */
-    padding-bottom: 5rem;
-}
-
-.education-row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5rem; /* Adjusts space between columns */
-}
-
-.education-column {
-    flex: 1 1 40rem; /* Sets the base size for each column */
-}
-
-.title {
-    font-size: 2.5rem;
-    margin: 0 0 1.5rem 2rem; /* Ensures proper spacing for title */
-}
-
-.education {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            min-height: auto;
             padding-bottom: 5rem;
+        }
+
+        .education-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5rem;
+        }
+
+        .education-column {
+            flex: 1 1 40rem;
+            /* Sets the base size for each column */
+        }
+
+        .title {
+            font-size: 2.5rem;
+            margin: 0 0 1.5rem 2rem;
         }
 
         .education .education-row {
@@ -343,55 +332,53 @@
             margin-bottom: 2rem;
         }
 
-
         .skills {
-    padding: 2rem; /* Add padding around the skills section */
-}
+            padding: 2rem;
+        }
 
-.skills h2 {
-    text-align: center; /* Center the heading */
-    font-size: 2.5rem; /* Font size for the main heading */
-    margin-bottom: 2rem; /* Space below the heading */
-}
+        .skills h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+        }
 
-.skills-container {
-    display: flex; /* Use flexbox for layout */
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
-    justify-content: space-around; /* Space items evenly */
-}
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
 
-.skills-category {
-    flex: 1 1 25%; /* Flex-grow, flex-shrink, and basis for responsive layout */
-    margin: 1rem; /* Margin around each category */
-    padding: 1rem; /* Inner padding for categories */
-    border: 2px solid #00abf0; /* Thicker blue border color */
-    border-radius: 0.6rem; /* Rounded corners */
-    background-color: transparent; /* Set background to transparent */
-    box-shadow: none; /* Remove shadow for cleaner look with transparency */
-    transition: transform 0.3s; /* Smooth transition for hover effect */
-}
+        .skills-category {
+            flex: 1 1 25%;
+            margin: 1rem;
+            padding: 1rem;
+            border: 2px solid #00abf0;
+            border-radius: 0.6rem;
+            background-color: transparent;
+            transition: transform 0.3s;
+        }
 
-.skills-category:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-}
+        .skills-category:hover {
+            transform: translateY(-5px);
+        }
 
-.skills-category h3 {
-    font-size: 1.8rem; /* Font size for category heading */
-    margin-bottom: 1rem; /* Space below category heading */
-}
+        .skills-category h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
 
-.skills-category ul {
-    list-style-type: none; /* Remove default bullet points */
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-}
+        .skills-category ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
 
-.skills-category li {
-    margin-bottom: 0.5rem; /* Space between skills */
-    font-size: 1.2rem; /* Font size for individual skills */
-    line-height: 1.5; /* Line height for better readability */
-    color: #333; /* Text color */
-}
+        .skills-category li {
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            line-height: 1.5;
+            color: #333;
+        }
 
         .progress h3 {
             font-size: 1.7rem;
@@ -419,7 +406,8 @@
             border-radius: .3rem;
             background: #00abf0;
         }
-		   .contact {
+
+        .contact {
             background: rgba(0, 0, 0, 0.7);
             padding: 50px 10%;
             color: white;
@@ -440,6 +428,7 @@
             display: flex;
             justify-content: center;
             gap: 3rem;
+            flex-wrap: wrap;
         }
 
         .contact-info div {
@@ -465,68 +454,211 @@
         footer p {
             margin: 0;
         }
+
         .achievements {
-    background: rgba(0, 0, 0, 0.7);
-    padding: 50px 0;
-    color: white;
-    text-align: center;
-}
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px 0;
+            color: white;
+            text-align: center;
+        }
 
-.achievements .heading {
-    font-size: 5rem;
-    margin-bottom: 3rem;
-    text-align: center;
-    color: white;
-}
+        .achievements .heading {
+            font-size: 5rem;
+            margin-bottom: 3rem;
+        }
 
-.achievements-row {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5rem;
-    margin-top: 30px;
-}
+        .achievements-row {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 5rem;
+            margin-top: 30px;
+            flex-wrap: wrap; /* Added to ensure proper wrapping */
+        }
 
-.achievements-column {
-    flex: 1 1 40%;
-    text-align: left;
-}
+        .achievements-column {
+            flex: 1 1 40%;
+            text-align: left;
+        }
 
-.achievements-box {
-    border-left: .2rem solid #00abf0;
-    padding-left: 1rem;
-}
+        .achievements-box {
+            border-left: .2rem solid #00abf0;
+            padding-left: 1rem;
+        }
 
-.achievements-content {
-    margin-top: 1rem;
-}
+        .achievements-content {
+            margin-top: 1rem;
+        }
 
-.achievements .content {
-    position: relative;
-    padding: 1.5rem;
-    border: .2rem solid #00abf0;
-    border-radius: .6rem;
-    margin-bottom: 2rem;
-}
+        .achievements .content {
+            position: relative;
+            padding: 1.5rem;
+            border: .2rem solid #00abf0;
+            border-radius: .6rem;
+            margin-bottom: 2rem;
+        }
 
-.achievements .content .year {
-    font-size: 1.4rem;
-    color: #00abf0;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-}
+        .achievements .content .year {
+            font-size: 1.4rem;
+            color: #00abf0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
 
+        /* Media Queries for Responsiveness */
 
- </style> 		
-                                				
-</head>                                
-                                   
-								   
-                                				
+        @media (max-width: 1200px) {
+            .header {
+                padding: 10px 5%;
+            }
+
+            .home-content h1 {
+                font-size: 48px;
+            }
+
+            .home-content h3 {
+                font-size: 28px;
+            }
+
+            .about-img {
+                width: 20rem;
+                height: 20rem;
+            }
+
+            .about-content h3 {
+                font-size: 2.4rem;
+            }
+
+            .education-row {
+                flex-direction: column;
+            }
+
+            .achievement-row,
+            .achievements-column {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .home-content {
+                padding: 0 5%;
+            }
+
+            .home-sci {
+                bottom: 30px;
+                width: 120px;
+            }
+
+            .skills-category {
+                flex: 1 1 40%; /* Adjusting for larger devices */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .navbar {
+                margin-top: 10px;
+            }
+
+            .navbar a {
+                margin: 0 10px;
+            }
+
+            .home-content h1 {
+                font-size: 36px;
+            }
+
+            .home-content h3 {
+                font-size: 24px;
+            }
+
+            .home-content p {
+                font-size: 14px;
+                margin: 10px 0 20px;
+            }
+
+            .btn-box {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+
+            .progress h3 {
+                font-size: 1.5rem;
+            }
+
+            .skills-category {
+                flex: 1 1 100%;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .home-content h1 {
+                font-size: 30px;
+            }
+
+            .home-content h3,
+            .about-content h3 {
+                font-size: 20px;
+            }
+
+            .about-content p {
+                font-size: 14px;
+            }
+
+            .contact-info h3 {
+                font-size: 1.2rem;
+            }
+
+            .contact-info p {
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .header {
+                padding: 10px 5%;
+            }
+
+            .navbar a {
+                font-size: 16px;
+                margin: 0 5px;
+            }
+
+            .btn-box a {
+                font-size: 16px;
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .skills-category h3 {
+                font-size: 1.5rem; /* Smaller font size */
+            }
+
+            .skills-category li {
+                font-size: 1rem; /* Smaller skill font size */
+            }
+
+            footer {
+                font-size: 14px; /* Smaller footer font */
+            }
+        }
+    </style>
+</head>
 
 <body>
-    <header class="header" >
+    <header class="header">
         <a href="#home" class="logo">Krayolin.</a>
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
@@ -534,7 +666,7 @@
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
-            <a href="#achievements">Achievements</a> 
+            <a href="#achievements">Achievements</a>
         </nav>
     </header>
     <div class="content"></div>
@@ -547,7 +679,7 @@
             <p>As a passionate tech enthusiast currently in my first year at Richfield College, I am dedicated to mastering the art of web development. My journey in this dynamic field is driven by a keen interest in creating innovative and user-friendly web solutions. Through my coursework and hands-on projects, I am honing my skills in HTML, CSS, JavaScript, and various web development frameworks. I am excited to continue learning, collaborating, and contributing to the ever-evolving world of web development.</p>
             <div class="btn-box">
                 <a href="new 1.html">Achievements</a>
-                <a href="mailto:Krayolinkisten7@gmail@gmail.com">Let's Talk</a>
+                <a href="mailto:Krayolinkisten7@gmail.com">Let's Talk</a>
             </div>
         </div>
         <div class="home-sci">
@@ -567,187 +699,185 @@
             <h3>About Me?</h3>
             <p>As a passionate tech enthusiast currently in my first year at Richfield College, I am dedicated to mastering the art of web development. My journey in this dynamic field is driven by a keen interest in creating innovative and user-friendly web solutions. Through my coursework and hands-on projects, I am honing my skills in HTML, CSS, JavaScript, and various web development frameworks. I am excited to continue learning, collaborating, and contributing to the ever-evolving world of web development.</p>
             <div class="btn-box btns">
-                <a href="Krayolin-Kisten_CV (3) - for merge.docx" download="Krayolin-Kisten_CV (3) - for merge.docx" >Download CV</a>
+                <a href="Krayolin-Kisten_CV (3) - for merge.docx" download="Krayolin-Kisten_CV (3) - for merge.docx">Download CV</a>
             </div>
         </div>
-        <section class="education" id="education">
-            <h2 class="heading">My <span class="me">Journey</span></h2>
-            <div class="education-row">
-                <div class="education-column">
-                    <h3 class="title">Education</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> 2028 (Expected)</div>
-                                <h3>Bachelor of Science in Information Technology</h3>
-                                <p>Richfield Graduate Institute of Technology, Umhlanga Campus, South Africa</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> 2024 - Present</div>
-                                <h3>Higher Certificate in Information Technology</h3>
-                                <p>Richfield Graduate Institute of Technology, Umhlanga Campus, South Africa</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2023</div>
-                                <h3>High School (Grade 12)</h3>
-                                <p>Greenbury Secondary School</p>
-                                <p>Subjects: English, Afrikaans, Pure Mathematics, Physical Science, Accounting, Information Technology</p>
-                            </div>
+    </section>
+    <section class="education" id="education">
+        <h2 class="heading">My <span class="me">Journey</span></h2>
+        <div class="education-row">
+            <div class="education-column">
+                <h3 class="title">Education</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2028 (Expected)</div>
+                            <h3>Bachelor of Science in Information Technology</h3>
+                            <p>Richfield Graduate Institute of Technology, Umhlanga Campus, South Africa</p>
                         </div>
-                    </div>
-                </div>
-                <div class="education-column">
-                    <h3 class="title">Experience</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Oct - Present</div>
-                                <h3>Intern - Quality Control & Assurance</h3>
-                                <p>Toyoda Gosei</p>
-                                <p>Assisted in automating processes, conducted data analysis, and supported real-time reporting configurations.</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Sep - Oct 2024</div>
-                                <h3>Freelance Developer</h3>
-                                <p>Developed a Delphi 2010 software application on exoplanets for a Practical Assessment Task (PAT).</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Oct 2024 - Present</div>
-                                <h3>IT Tutor</h3>
-                                <p>Provide programming lessons in Delphi 2010 for a Grade 10 student, creating custom lesson plans.</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Jul - Sep 2024</div>
-                                <h3>Social Media Manager</h3>
-                                <p>Tamrin Online Store</p>
-                                <p>Managed social media platforms, increased engagement by 30%, and facilitated sales growth through product content.</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> Apr 2023 - Jul 2024</div>
-                                <h3>Customer Service Representative</h3>
-                                <p>CCI</p>
-                                <p>Provided technical support, account management, and consistently met performance targets.</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i> 2024</div>
-                                <h3>Electronic Officer</h3>
-                                <p>IEC South Africa Elections</p>
-                                <p>Set up and maintained electronic voting machines and assisted voters during the elections.</p>
-                            </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2024 - Present</div>
+                            <h3>Higher Certificate in Information Technology</h3>
+                            <p>Richfield Graduate Institute of Technology, Umhlanga Campus, South Africa</p>
+                        </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2019 - 2023</div>
+                            <h3>High School (Grade 12)</h3>
+                            <p>Greenbury Secondary School</p>
+                            <p>Subjects: English, Afrikaans, Pure Mathematics, Physical Science, Accounting, Information Technology</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="achievements" id="achievements">
-            <h2 class="heading">Achievements & <span class="me">Certifications</span></h2>
-            <div class="achievements-row">
-                <div class="achievements-column">
-                    <h3 class="title">Achievements</h3>
-                    <div class="achievements-box">
-                        <div class="achievements-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-trophy'></i> 2023</div>
-                                <h3>Prefect</h3>
-                                <p>Served as a Prefect at Greenbury Secondary School, demonstrating leadership and responsibility.</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-trophy'></i> 2019 - 2023</div>
-                                <h3>Rotary Club Member</h3>
-                                <p>Member of the Rotary Club at Greenbury Secondary School, contributing to community service and school events.</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-badge-check'></i> Learner's License</div>
-                                <p>Obtained Learner's License at Verulam Testing Grounds.</p>
-                            </div>
+            <div class="education-column">
+                <h3 class="title">Experience</h3>
+                <div class="education-box">
+                    <div class="education-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Oct - Present</div>
+                            <h3>Intern - Quality Control & Assurance</h3>
+                            <p>Toyoda Gosei</p>
+                            <p>Assisted in automating processes, conducted data analysis, and supported real-time reporting configurations.</p>
                         </div>
-                    </div>
-                </div>
-                <div class="achievements-column">
-                    <h3 class="title">Certifications</h3>
-                    <div class="achievements-box">
-                        <div class="achievements-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-certification'></i> CompTIA A+</div>
-                                <p>Self-taught and completed an online CompTIA A+ certification course to enhance IT foundational knowledge.</p>
-                            </div>
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-certification'></i> G-Code & M-Code CNC Programming</div>
-                                <p>Certification in Computer Numerical Control (CNC) Programming through Udemy, specializing in G-Code and M-Code.</p>
-                            </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Sep - Oct 2024</div>
+                            <h3>Freelance Developer</h3>
+                            <p>Developed a Delphi 2010 software application on exoplanets for a Practical Assessment Task (PAT).</p>
+                        </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Oct 2024 - Present</div>
+                            <h3>IT Tutor</h3>
+                            <p>Provide programming lessons in Delphi 2010 for a Grade 10 student, creating custom lesson plans.</p>
+                        </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Jul - Sep 2024</div>
+                            <h3>Social Media Manager</h3>
+                            <p>Tamrin Online Store</p>
+                            <p>Managed social media platforms, increased engagement by 30%, and facilitated sales growth through product content.</p>
+                        </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> Apr 2023 - Jul 2024</div>
+                            <h3>Customer Service Representative</h3>
+                            <p>CCI</p>
+                            <p>Provided technical support, account management, and consistently met performance targets.</p>
+                        </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-calendar'></i> 2024</div>
+                            <h3>Electronic Officer</h3>
+                            <p>IEC South Africa Elections</p>
+                            <p>Set up and maintained electronic voting machines and assisted voters during the elections.</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+    <section class="achievements" id="achievements">
+        <h2 class="heading">Achievements & <span class="me">Certifications</span></h2>
+        <div class="achievements-row">
+            <div class="achievements-column">
+                <h3 class="title">Achievements</h3>
+                <div class="achievements-box">
+                    <div class="achievements-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-trophy'></i> 2023</div>
+                            <h3>Prefect</h3>
+                            <p>Served as a Prefect at Greenbury Secondary School, demonstrating leadership and responsibility.</p>
+                        </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-trophy'></i> 2019 - 2023</div>
+                            <h3>Rotary Club Member</h3>
+                            <p>Member of the Rotary Club at Greenbury Secondary School, contributing to community service and school events.</p>
+                        </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-badge-check'></i> Learner's License</div>
+                            <p>Obtained Learner's License at Verulam Testing Grounds.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="achievements-column">
+                <h3 class="title">Certifications</h3>
+                <div class="achievements-box">
+                    <div class="achievements-content">
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-certification'></i> CompTIA A+</div>
+                            <p>Self-taught and completed an online CompTIA A+ certification course to enhance IT foundational knowledge.</p>
+                        </div>
+                        <div class="content">
+                            <div class="year"><i class='bx bxs-certification'></i> G-Code & M-Code CNC Programming</div>
+                            <p>Certification in Computer Numerical Control (CNC) Programming through Udemy, specializing in G-Code and M-Code.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <section id="skills" class="skills">
-            <h2>Skills</h2>
-            <div class="skills-container">
-                <div class="skills-category">
-                    <h3>Programming Languages</h3>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Delphi 2010</li>
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3>Web Development</h3>
-                    <ul>
-                        <li>Responsive Web Design</li>
-                        <li>SP Page Builder</li>
-                        <li>Joomla</li>
-                        <li>Version Control (Git)</li>
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3>Software & Tools</h3>
-                    <ul>
-                        <li>Microsoft Office Suite</li>
-                        <li>Adobe Photoshop (Basic)</li>
-                        <li>Visual Studio Code</li>
-                    </ul>
-                </div>
-                <div class="skills-category">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Problem Solving</li>
-                        <li>Effective Communication</li>
-                        <li>Team Collaboration</li>
-                        <li>Time Management</li>
-                    </ul>
-                </div>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Programming Languages</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Delphi 2010</li>
+                </ul>
             </div>
-        </section>
-        
-                
-                <section class="contact" id="contact">
-            <h2>Contact Me</h2>
-            <p> Feel free to contact me through the details below.</p>
-            <div class="contact-info">
-                <div>
-                    <h3>Email</h3>
-                    <p>Krayolinkisten7@gmail.com</p>
-                </div>
-                <div>
-                    <h3>Phone</h3>
-                    <p>+27 67 342 9856</p>
-                </div>
-                <div>
-                    <h3>Location</h3>
-                    <p>Durban, South Africa</p>
-                </div>
+            <div class="skills-category">
+                <h3>Web Development</h3>
+                <ul>
+                    <li>Responsive Web Design</li>
+                    <li>SP Page Builder</li>
+                    <li>Joomla</li>
+                    <li>Version Control (Git)</li>
+                </ul>
             </div>
-        </section>
+            <div class="skills-category">
+                <h3>Software & Tools</h3>
+                <ul>
+                    <li>Microsoft Office Suite</li>
+                    <li>Adobe Photoshop (Basic)</li>
+                    <li>Visual Studio Code</li>
+                </ul>
+            </div>
+            <div class="skills-category">
+                <h3>Soft Skills</h3>
+                <ul>
+                    <li>Problem Solving</li>
+                    <li>Effective Communication</li>
+                    <li>Team Collaboration</li>
+                    <li>Time Management</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p> Feel free to contact me through the details below.</p>
+        <div class="contact-info">
+            <div>
+                <h3>Email</h3>
+                <p>Krayolinkisten7@gmail.com</p>
+            </div>
+            <div>
+                <h3>Phone</h3>
+                <p>+27 67 342 9856</p>
+            </div>
+            <div>
+                <h3>Location</h3>
+                <p>Durban, South Africa</p>
+            </div>
+        </div>
+    </section>
     </div>
 
     <footer>
         <p>© 2024 Krayolin Kisten. All Rights Reserved.</p>
     </footer>
-				   
-                  				 
 </body>
 
 </html>

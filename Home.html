@@ -24,7 +24,6 @@
         }
 
         .header {
-            color: white;
             position: fixed;
             top: 0;
             left: 0;
@@ -67,34 +66,41 @@
             align-items: center;
             padding: 0 10%;
             position: relative;
+            display: flex;
+            flex-direction: column; /* Added for responsiveness */
+            justify-content: center; /* Added for centering */
         }
 
         .home-content {
             max-width: 600px;
+            width: 100%; /* Added for responsiveness */
+            padding: 0 10%; /* Added for padding */
         }
 
         .home-content h1 {
             font-size: 56px;
             font-weight: 700;
             line-height: 1.2;
+            text-align: center; /* Center text for mobile */
         }
 
         .home-content h3 {
             font-size: 32px;
             font-weight: 700;
             color: #00abf0;
+            text-align: center; /* Center text for mobile */
         }
 
         .home-content p {
             font-size: 16px;
             margin: 20px 0 40px;
+            text-align: center; /* Center text for mobile */
         }
 
         .btn-box {
             display: flex;
-            justify-content: space-between;
-            width: 345px;
-            height: 50px;
+            justify-content: center; /* Center buttons for mobile */
+            gap: 20px; /* Add gap for better spacing */
         }
 
         .btn-box a {
@@ -103,7 +109,7 @@
             justify-content: center;
             align-items: center;
             width: 150px;
-            height: 100%;
+            height: 50px;
             background: #00abf0;
             border: 2px solid #00abf0;
             border-radius: 8px;
@@ -198,14 +204,14 @@
             align-items: center;
             flex-direction: column;
             gap: 2rem;
-            padding-bottom: 6rem;
+            padding: 6rem 2rem;
             background: rgba(0, 0, 0, 0.7);
+            text-align: center; /* Center content */
         }
 
         .heading {
             font-size: 5rem;
             margin-bottom: 3rem;
-            text-align: center;
         }
 
         .me {
@@ -213,13 +219,13 @@
         }
 
         .about-img {
-            position: relative;
             width: 25rem;
             height: 25rem;
             border-radius: 50%;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin: 0 auto; /* Center the image */
         }
 
         .about-img img {
@@ -254,7 +260,7 @@
 
         .about-content {
             max-width: 600px;
-            text-align: center;
+            margin: 0 auto; /* Center the about content */
         }
 
         .about-content p {
@@ -280,23 +286,29 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            padding-bottom: 5rem;
+            padding: 5rem 2rem;
         }
 
         .education-row {
             display: flex;
             flex-wrap: wrap;
             gap: 5rem;
+            justify-content: center; /* Center the education items */
+            max-width: 1200px; /* Limit the width */
+            margin: auto; /* Center the row */
         }
 
         .education-column {
             flex: 1 1 40rem;
             /* Sets the base size for each column */
+            max-width: 45%; /* Limit width for large screens */
+            margin: 0 auto; /* Center columns */
         }
 
         .title {
             font-size: 2.5rem;
-            margin: 0 0 1.5rem 2rem;
+            margin: 0 0 1.5rem 0;
+            text-align: center; /* Center title */
         }
 
         .education .education-row {
@@ -311,7 +323,7 @@
 
         .education-column .title {
             font-size: 2.5rem;
-            margin: 0 0 1.5rem 2rem;
+            margin: 0 0 1.5rem 0;
         }
 
         .education-column .education-box {
@@ -345,7 +357,10 @@
         .skills-container {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center; /* Center skills for small screens */
+            gap: 1rem; /* Add gap to skills */
+            max-width: 1200px; /* Limit the width */
+            margin: auto; /* Center the skills */
         }
 
         .skills-category {
@@ -356,6 +371,7 @@
             border-radius: 0.6rem;
             background-color: transparent;
             transition: transform 0.3s;
+            max-width: 20rem; /* Limit the size */
         }
 
         .skills-category:hover {
@@ -479,6 +495,8 @@
         .achievements-column {
             flex: 1 1 40%;
             text-align: left;
+            max-width: 40rem; /* Ensure proper sizing */
+            margin: 0 auto; /* Centering */
         }
 
         .achievements-box {
@@ -534,8 +552,7 @@
                 flex-direction: column;
             }
 
-            .achievement-row,
-            .achievements-column {
+            .achievements-row {
                 flex-direction: column;
                 align-items: center;
             }
@@ -624,6 +641,14 @@
             .contact-info p {
                 font-size: 1rem;
             }
+
+            .heading {
+                font-size: 3rem; /* Smaller heading for mobile */
+            }
+
+            .btn-box a {
+                font-size: 14px; /* Smaller button font size */
+            }
         }
 
         @media (max-width: 400px) {
@@ -652,6 +677,10 @@
 
             footer {
                 font-size: 14px; /* Smaller footer font */
+            }
+
+            .about-content p {
+                font-size: 12px; /* Smaller paragraph size */
             }
         }
     </style>
@@ -873,10 +902,9 @@
             </div>
         </div>
     </section>
-    </div>
 
     <footer>
-        <p>&copy; 2024 Krayolin Kisten. All Rights Reserved.</p>
+        <p>© 2024 Krayolin Kisten. All Rights Reserved.</p>
     </footer>
 </body>
 
